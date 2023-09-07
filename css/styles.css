@@ -1,0 +1,61 @@
+:root {
+    --canvas--color: #4d0f00;
+    --color--one: #efb762;
+    --color-two: #8f0401;
+    --color-three: #b20403;
+}
+
+body {
+    background-color: black;
+}
+
+.frame {
+    border: 1px solid var(--canvas--color);
+    width: 500px;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: var(--canvas--color);
+    overflow: hidden;
+    border-radius: 5px;
+   
+}
+
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: var(--color--one);
+    margin: 20px auto;
+    box-shadow: 0 0 3px 3px var(--color--one);
+    border-radius: 9px;
+    transform: rotate(-0.6deg);
+}
+
+.two {
+    width: 475px;
+    height: 200px;
+    background-color: var(--color-two);
+    margin: 0 auto 20px;
+    box-shadow: 0 0 3px 3px var(--color--two);
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    background-color: var(--color-three);
+    margin: auto;
+    box-shadow: 0 0 5px 5px var(--color-three);
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
+  }
+
+.one, .two, .three {
+    filter: blur(2px);
+}
